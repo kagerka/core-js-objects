@@ -300,7 +300,7 @@ function group(array, keySelector, valueSelector) {
       );
     }
     return map;
-  }, new Map());
+  });
   return map;
 }
 
