@@ -37,8 +37,6 @@ function shallowCopy(obj) {
 function mergeObjects(objects) {
   const map = new Map();
   Object.entries(objects);
-  const entries = Object.entries(objects);
-  Object.assign(entries);
   objects.map((el) => {
     const keys = Object.keys(el);
     const values = Object.values(el);
