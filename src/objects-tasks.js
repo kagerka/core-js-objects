@@ -252,10 +252,12 @@ function fromJSON(proto, json) {
  *      { country: 'Russia',  city: 'Saint Petersburg' }
  *    ]
  */
-function sortCitiesArray(/* arr */) {
-  throw new Error('Not implemented');
+function sortCitiesArray(arr) {
+  arr.sort(
+    (a, b) => a.country.localeCompare(b.country) || a.city.localeCompare(b.city)
+  );
+  return arr;
 }
-
 /**
  * Groups elements of the specified array by key.
  * Returns multimap of keys extracted from array elements via keySelector callback
